@@ -1,0 +1,22 @@
+
+.left {
+    width: 500px;
+    height: 300px;
+    float : left;
+    background-color : rgb(255, 255, 255);
+}
+.left img{
+    width:400px;
+    height:200px;
+}
+
+.right {
+    width: 500px;
+    height: 300px;
+    float : right;
+    background-color : rgb(255, 255, 255);
+}
+.right img{
+    width:400px;
+    height:200px;
+}
