@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- 체크인<=오늘<=체크아웃 날짜면 예약 중/ 그렇지 않으면 예약 가능 -->
+<html>
+    <head>
+        <meta charset="utf-8"
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="mouseover.css" type="text/css" rel="stylesheet" />
+        <!-- <link href="mouseover.js" type="text/javascript" rel=""/> -->
+        <title>예약 관리</title>
+        <style>
+            #room_table tr td {
+                border : 1px solid gray;
+                padding: 15px;
+                text-align : center;
+            }
+            #thead tr td {
+                margin-right: 100px;
+            }
+            #room_table td {
+                width : 300px;
+                height: 180px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                <h2 style="border-bottom: 1px; color:#000000;">예약 관리</h2>
+            </div>
+            <form action="/manage_res_date" method="POST">
+                <div class="date">
+                    <table>
+                        <tr id="thead">
+                            <td><h5>날짜 선택</h5></td><td><input type="date" name="calendar" id="calendar" value="날짜선택"></td>
+                        </tr>
+                    </table>  
+                </div>
+            </form>
+            
+            <div class="rooms">
+                <figure class="snip1273">
+                    <table id="room_table">
+                        <tbody>
+                            <!-- 호수 빼고 db 참조 -->
+                            <tr>
+                                <td>401호<br>is예약?<br>담당직원<figcaption><br>예약자명<br>예약자 전화번호<br>비품db<br>청소상태db</figcaption></td>
+                                <td>402호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>403호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>404호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>405호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>406호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>407호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>408호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>409호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>410호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                            <tr>
+                                
+                            </tr>
+                            <tr>
+                                <td>411호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>412호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>413호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>414호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>415호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>416호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>417호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>418호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>419호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>420호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                            <tr>
+                                <td>421호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>422호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>423호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>424호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>425호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>426호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>427호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>428호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>429호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>430호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                            <tr>
+                                <td>501호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>502호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>503호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>504호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>505호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>506호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>507호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>508호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>509호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>510호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                            <tr>
+                                <td>511호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>512호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>513호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>514호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>515호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>516호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>517호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>518호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>519호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>520호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                            <tr>
+                                <td>521호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>522호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>523호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>524호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>525호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>526호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>527호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>528호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>529호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>530호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                            <tr>
+                                <td>601호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>602호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>603호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>604호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>605호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>606호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>607호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>608호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>609호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>610호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                            <tr>
+                                <td>611호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>612호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>613호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>614호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>615호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>616호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>617호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>618호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>619호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>620호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                            <tr>
+                                <td>621호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>622호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>623호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>624호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>625호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>626호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>627호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>628호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>629호<br>is예약?<br>예약자명<br>담당직원</td>
+                                <td>630호<br>is예약?<br>예약자명<br>담당직원</td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </figure>
+                
+            </div>
+        </div>
+    </body>
+</html>

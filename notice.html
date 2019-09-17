@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>공지사항</title>
+        <style>
+            nav ul{
+                list-style: none;
+                float : left;
+                width: 200px;
+            }
+            article{
+                float : left;
+            }
+            table {
+                margin : auto;
+                width : 100%;
+                border-top : 1px solid #444444;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            
+        </style>
+        <script type="text/javascript">
+            function move(url){
+                location.href=url;
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/notice.html">공지사항</a></li>
+                <li><a href="/mem-res-confirm.html">문의하기</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>공지사항</h2>
+            <hr width="800px" color="gray">
+            <table class="board">
+                <colgroup>
+                    <col width="50" />
+                    <col width="500" />
+                    <col width="100" />
+                    <col width="50" />
+                </colgroup>
+                <thead>
+                    <th>번 호</th><th>제 목</th><th>작성자</th><th>작성일</th><th>조 회</th>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td alignt="center" colsapn="5">1</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <input type = "button" value="처음으로" onclick="move('Board_List.jsp');"/>
+            <input type = "button" value="글쓰기" onclick="move('Board_Write.jsp');"/>
+        </article>
+    </body>
+</html>

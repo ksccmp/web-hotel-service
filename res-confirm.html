@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>예약 확인</title>
+        <style>
+            
+            form {
+                /* Just to center the form on the page */
+                margin :  auto;
+                width : 350px;
+                /* To see the outline of the form */
+                /* padding : 1em;
+                border : 1px solid #CCC;
+                border-radious : 1em; */
+            }
+            legend{
+                margin :auto;
+            }
+
+            form div + div {
+                margin-top: 1.5em;
+            }
+            form + article {
+                margin-top: 1.5em;
+            }
+            form li + li{
+                margin-top: 0.5em;
+            }
+            form div ul li + div{
+                margin-top : 1em;
+            }
+            article{
+                float : left;
+            }
+            label{
+                display : inline-block;
+                width : 90px;
+                text-align: right;
+            }
+            /* article div li{
+                border:1px solid darkgray;
+                width: 100px;
+                height: 25px;
+            } */
+            #category {
+                float : left;
+            }
+            #show li{
+                border:1px solid darkgray;
+                width:200px;
+            }
+            #show{
+                float : left;
+            }
+            #list1{
+                list-style :none;
+            }
+            #list2{
+                list-style : none;
+            }
+            td + td{
+                width:60px;
+            }
+            #db{
+                border:1px solid darkgray;
+            }
+            #cancelButton{
+                float: right;
+            }
+
+        </style>
+
+        <!-- 조회 버튼 누르면 sql에서 정보를 받아와서 표시한다. -->
+        <script type="text/javascript">
+            function show(){
+
+            }
+        </script>
+        <!-- 예약 취소 버튼 누르면 예약을 취소 -->
+        <script type="text/javascript">
+            function cancel(){
+
+            }
+        </script>
+    </head>
+    <body>
+        <h2>예약확인</h2>
+        <hr width="800px" color="gray">
+        <form action="/confirmBookingID" method = "post">
+            <div>
+                <label for="BookingID">예약번호</label>
+                <input type = "text" id="BookingID" name="BookingID" />
+                <button type="submit">조회</button>
+            </div>
+            <div id="category">
+                <ul id="list1">
+                    <li>이름</li>
+                    <li>날짜</li>
+                    <li>방</li>
+                    <li>인원</li>
+                </ul>
+            </div>
+            <div id="show">
+                <ul id="list2">
+                    <li>이름db</li>
+                    <li>날짜db</li>
+                    <li>방db</li>
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr id="people">
+                                    <td>성인</td><td id="db">db</td><td>어린이</td><td id="db">db</td>
+                                </tr>
+                            </tbody>
+                        </table>    
+                    </div>
+                </ul>
+            </div>
+        </form>
+        <form action="/cancelBooking" method = "post">
+            <button id="cancelButton" type="submit">예약취소</button>
+        </form>
+        
+    </body>
+</html>
